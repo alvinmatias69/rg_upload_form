@@ -23,10 +23,10 @@ Create a database and import researchGroup.sql .
 
 Open .env.example file using text manager and change it according to your own environment variables, then rename it to .env
 ```
-HOST=localhost			//your database host
-USERNAME=root			//your database username
-PASSWORD=aman4869		//your database password
-DATABASE=rekruitasi_rg	//your database name
+HOST=					//your database host
+USERNAME=				//your database username
+PASSWORD=				//your database password
+DATABASE=				//your database name
 ```
 ## Starting
 Simply go to your form folder location using terminal and start script using npm.
