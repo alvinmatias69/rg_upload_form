@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Research Group Participation</title>
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+	<!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/form.css">
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body class="grey lighten-4">
+
+	<div style="height: 278px;" class="grey s12">
+	</div>
+    <div class="row"  style="margin-top: -100px">
+	    <div class="col s10 offset-s1 m6 offset-m3 grey lighten-1" style="height: 0.5em">
+	    </div>
+	    <div class="col s10 offset-s1 m6 offset-m3 white z-depth-3" style="padding: 20px 35px">
+			<h4>Form Keikutsertaan RG</h4>
+			<div>
+				<form action="http://localhost:4000/form" method="POST" enctype="multipart/form-data" onsubmit="submitForm()">
+					<input type="hidden" name="nim_hidden" id="nim_hidden">
+					<input type="hidden" name="nama_hidden" id="nama_hidden">
+					<input type="hidden" name="resume_hidden" id="resume_hidden">
+					<div id="content">
+						<p style="padding-bottom: 0.1em">Dalam rangka 17 Agustus</p>
+						<span class="red-text text-lighten-1">* required</span>
+						<div class="row">
+							<div class="input-field">
+					          <input name="nim" id="nim" type="number" min="1000000000" required class="validate">
+					          <label for="nim">NIM <span class="red-text text-lighten-1">*</span></label>
+					        </div>
+
+					        <div class="input-field">
+					          <input name="nama" id="nama" type="text" class="validate" required>
+					          <label for="nama">Nama <span class="red-text text-lighten-1">*</span></label>
+					        </div>
+
+					        <div class="file-field input-field">
+					        	<div class="btn blue">
+					        		<span>Upload</span>
+					        		<input type="file" required id="resume" name="resume">
+					        	</div>
+					        	<div class="file-path-wrapper">
+					        		<input class="file-path validate" type="text" placeholder="Upload resume anda" id="fileName">
+					        	</div>
+				        		<h6 class="grey-text text-lighten-1" id="exp">File yang diupload harus dalam ekstensi pdf</h6>
+					        </div>
+
+							<button id="submit" class="btn-large waves-effect waves-light blue right" style="margin-top: 1em">Submit</button>
+						</div>
+					</div>
+				</form>
+			</div>
+	    </div>
+	    <div class="col s10 offset-s1 m6 offset-m3 center-align grey-text text-darken-1">
+    		<br>
+    		<img src="assets/images/Logo.png" width="50">
+    		<br>
+    		<b>Database Laboratory</b>
+	    	<br>
+	    	Mohon isi form ini dengan benar. Partisipasi kalian sangat berarti untuk kita semua :D
+	    </div>
+    </div>
+
+    <script src="assets/scripts/jquery.js"></script>
+</body>
+</html>
